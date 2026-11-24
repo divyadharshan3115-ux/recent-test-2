@@ -1,0 +1,1966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamline Cotton - Pure Cotton Crafted by Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #444748;
+            background: linear-gradient(90deg, #e8dcc8 0%, #f5f0e8 100%);
+        }
+
+        /* ========== HEADER ========== */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(232, 220, 200, 0.95);
+            backdrop-filter: blur(6px);
+            box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            padding: 24px 64px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        .nav-left {
+            display: flex;
+            gap: 40px;
+            flex: 1;
+        }
+
+        .nav-left a, .nav-right a {
+            text-decoration: none;
+            color: #444748;
+            font-size: 16px;
+            font-weight: 400;
+            letter-spacing: 1.6px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        .nav-left a:hover, .nav-right a:hover {
+            color: #060607;
+        }
+
+        .nav-center {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: 2.4px;
+            text-transform: uppercase;
+            color: #060607;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .nav-center:hover {
+            color: #d4a574;
+        }
+
+        .nav-right {
+            display: flex;
+            gap: 40px;
+            flex: 1;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .nav-icons {
+            display: flex;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .icon-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            color: #444748;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .icon-btn:hover {
+            color: #060607;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: #d4a574;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* ========== HERO SECTION ========== */
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            align-items: center;
+            padding: 120px 64px;
+            background: linear-gradient(90deg, #e8dcc8 0%, #f5f0e8 100%);
+            margin-top: 82px;
+        }
+
+        .hero-content h1 {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 64px;
+            font-weight: 400;
+            letter-spacing: -1.28px;
+            color: #060607;
+            line-height: 1.1;
+            margin-bottom: 16px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: #444748;
+            line-height: 1.6;
+            margin-bottom: 24px;
+        }
+
+        .hero-list {
+            margin-bottom: 32px;
+        }
+
+        .hero-list-item {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            margin-bottom: 11.5px;
+            font-size: 16px;
+            color: #1c1b1b;
+        }
+
+        .hero-list-item::before {
+            content: '✓';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 20px;
+            height: 20px;
+            background: #060607;
+            color: white;
+            border-radius: 2px;
+            flex-shrink: 0;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 16px 32px;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.7px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 2px solid #060607;
+            background: #060607;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: 'Hanken Grotesk', sans-serif;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background: white;
+            color: #060607;
+        }
+
+        .btn-outline {
+            background: white;
+            color: #060607;
+        }
+
+        .btn-outline:hover {
+            background: #060607;
+            color: white;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 700px;
+            background: #f0f0f0;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* ========== TRUST BADGES ========== */
+        .trust-section {
+            background: #d4a574;
+            border-top: 1px solid #c4c7c7;
+            border-bottom: 1px solid #c4c7c7;
+            padding: 33px 64px;
+        }
+
+        .trust-container {
+            display: flex;
+            gap: 64px;
+            justify-content: center;
+            align-items: center;
+            max-width: 1440px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .trust-badge {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .trust-badge-icon {
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .trust-badge p {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        /* ========== SHOP SECTION ========== */
+        .shop-section {
+            display: none;
+            background: #e8dcc8;
+            padding: 80px 64px;
+        }
+
+        .shop-section.active {
+            display: block;
+        }
+
+        .shop-header {
+            text-align: center;
+            margin-bottom: 48px;
+            max-width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .shop-header h2 {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 32px;
+            font-weight: 400;
+            color: #060607;
+            margin-bottom: 16px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 24px;
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid #e0d5cf;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            transform: translateY(-4px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: #f0f0f0;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 16px;
+        }
+
+        .product-category {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: #999;
+            margin-bottom: 8px;
+        }
+
+        .product-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #060607;
+            margin-bottom: 8px;
+        }
+
+        .product-price {
+            font-size: 18px;
+            font-weight: 600;
+            color: #d4a574;
+            margin-bottom: 8px;
+        }
+
+        .product-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 12px;
+            line-height: 1.4;
+            min-height: 42px;
+        }
+
+        .product-add-btn {
+            width: 100%;
+            padding: 12px;
+            background: #060607;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .product-add-btn:hover {
+            background: #d4a574;
+        }
+
+        /* ========== CART MODAL ========== */
+        .cart-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cart-modal.active {
+            display: flex;
+        }
+
+        .cart-content {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .cart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .cart-header h2 {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 28px;
+            font-weight: 400;
+            color: #060607;
+        }
+
+        .cart-close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #999;
+        }
+
+        .cart-items {
+            margin-bottom: 24px;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .cart-item-info {
+            flex: 1;
+        }
+
+        .cart-item-name {
+            font-weight: 600;
+            color: #060607;
+            margin-bottom: 4px;
+        }
+
+        .cart-item-price {
+            font-size: 14px;
+            color: #d4a574;
+        }
+
+        .cart-item-qty {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .qty-btn {
+            background: #f0f0f0;
+            border: none;
+            width: 24px;
+            height: 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .qty-btn:hover {
+            background: #e0e0e0;
+        }
+
+        .remove-btn {
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            margin-left: 12px;
+        }
+
+        .cart-summary {
+            border-top: 2px solid #060607;
+            padding-top: 16px;
+            margin-bottom: 24px;
+        }
+
+        .cart-total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            font-weight: 600;
+            color: #060607;
+            margin-bottom: 16px;
+        }
+
+        .cart-total-price {
+            color: #d4a574;
+        }
+
+        .cart-actions {
+            display: flex;
+            gap: 16px;
+        }
+
+        .cart-actions button {
+            flex: 1;
+            padding: 14px;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .checkout-btn {
+            background: #060607;
+            color: white;
+        }
+
+        .checkout-btn:hover {
+            background: #d4a574;
+        }
+
+        .continue-shopping-btn {
+            background: #f0f0f0;
+            color: #060607;
+        }
+
+        .continue-shopping-btn:hover {
+            background: #e0e0e0;
+        }
+
+        /* ========== CHECKOUT MODAL ========== */
+        .checkout-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 2100;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .checkout-modal.active {
+            display: flex;
+        }
+
+        .checkout-content {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .checkout-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+        }
+
+        .checkout-header h2 {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 28px;
+            font-weight: 400;
+            color: #060607;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.7px;
+            color: #060607;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px 14px;
+            font-size: 14px;
+            border: 1px solid #d0c8c0;
+            border-radius: 4px;
+            font-family: 'Hanken Grotesk', sans-serif;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #060607;
+            box-shadow: 0 0 0 3px rgba(6, 6, 7, 0.1);
+        }
+
+        .form-message {
+            margin-top: 12px;
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            display: none;
+            text-align: center;
+        }
+
+        .form-message.success {
+            background: #d4edda;
+            color: #155724;
+            display: block;
+        }
+
+        .form-message.error {
+            background: #f8d7da;
+            color: #721c24;
+            display: block;
+        }
+
+        /* ========== ADMIN PANEL ========== */
+        .admin-panel {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: white;
+            z-index: 3000;
+            overflow-y: auto;
+            padding-top: 82px;
+        }
+
+        .admin-panel.active {
+            display: block;
+        }
+
+        .admin-container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 40px 64px;
+        }
+
+        .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .admin-header h2 {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 32px;
+            font-weight: 400;
+            color: #060607;
+        }
+
+        .add-product-form {
+            background: #f7f3f2;
+            padding: 32px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .form-grid.full {
+            grid-template-columns: 1fr;
+        }
+
+        .products-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .admin-product-card {
+            background: white;
+            border: 1px solid #e0d5cf;
+            border-radius: 12px;
+            padding: 16px;
+        }
+
+        .admin-product-image {
+            width: 100%;
+            height: 150px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+
+        .admin-product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .admin-product-info {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .admin-product-info strong {
+            color: #060607;
+        }
+
+        .admin-product-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .admin-product-actions button {
+            flex: 1;
+            padding: 8px;
+            font-size: 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .edit-btn {
+            background: #d4a574;
+            color: white;
+        }
+
+        .edit-btn:hover {
+            background: #c39559;
+        }
+
+        .delete-btn {
+            background: #ff4444;
+            color: white;
+        }
+
+        .delete-btn:hover {
+            background: #cc0000;
+        }
+
+        /* ========== FOOTER ========== */
+        footer {
+            background: #f1edec;
+            border-top: 1px solid #c4c7c7;
+            padding: 120px 64px;
+        }
+
+        .footer-container {
+            max-width: 1440px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr;
+            gap: 24px;
+        }
+
+        .footer-section h3 {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            color: #060607;
+            margin-bottom: 16px;
+        }
+
+        .footer-section h4 {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 24px;
+            font-weight: 400;
+            letter-spacing: 2.4px;
+            text-transform: uppercase;
+            color: #060607;
+            margin-bottom: 24px;
+        }
+
+        .footer-section p {
+            font-size: 16px;
+            color: #444748;
+            margin-bottom: 8px;
+        }
+
+        .footer-list {
+            list-style: none;
+        }
+
+        .footer-list li {
+            margin-bottom: 12px;
+        }
+
+        .footer-list a {
+            text-decoration: none;
+            color: #444748;
+            font-size: 16px;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        .footer-list a:hover {
+            color: #060607;
+        }
+
+        @media (max-width: 1024px) {
+            .hero { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-container { grid-template-columns: 1fr 1fr; }
+            .form-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .hero { padding: 60px 16px; }
+            .hero-content h1 { font-size: 40px; }
+            .btn { width: 100%; }
+        }
+
+        .empty-message {
+            text-align: center;
+            color: #999;
+            padding: 40px 20px;
+            grid-column: 1 / -1;
+        }
+
+        /* =====================================================
+           FULLY RESPONSIVE LAYER
+           Works on phones, tablets, laptops, desktops, TVs
+           and ultra-wide screens.
+           ===================================================== */
+        *, *::before, *::after { box-sizing: border-box; }
+        html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+        body { overflow-x: hidden; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+        img, svg { max-width: 100%; height: auto; display: block; }
+        button, input, textarea, select { font: inherit; max-width: 100%; }
+        textarea { width: 100%; }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            padding: clamp(12px, 1.6vw, 24px) clamp(16px, 4vw, 64px);
+        }
+        nav {
+            width: 100%;
+            max-width: 1440px;
+            margin: 0 auto;
+            gap: clamp(12px, 2vw, 32px);
+        }
+        .nav-left, .nav-right {
+            flex: 1 1 0;
+            min-width: 0;
+            gap: clamp(14px, 2.2vw, 40px);
+            align-items: center;
+        }
+        .nav-right { justify-content: flex-end; }
+        .nav-left a, .nav-right a {
+            font-size: clamp(12px, 1.1vw, 16px);
+            letter-spacing: clamp(0.5px, 0.12vw, 1.6px);
+            white-space: nowrap;
+        }
+        .nav-center {
+            flex: 0 0 auto;
+            font-size: clamp(16px, 2.2vw, 24px);
+            letter-spacing: clamp(1px, 0.2vw, 2.4px);
+            line-height: 1.2;
+            text-align: center;
+        }
+        .icon-btn { font-size: clamp(16px, 1.6vw, 20px); padding: 4px; }
+
+        /* Hero */
+        .hero {
+            margin-top: 0;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: clamp(24px, 4vw, 64px);
+            padding: clamp(48px, 8vw, 120px) clamp(16px, 4vw, 64px);
+        }
+        .hero-content { min-width: 0; }
+        .hero-content h1 {
+            font-size: clamp(32px, 5.2vw, 72px);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            overflow-wrap: break-word;
+        }
+        .hero-content p { font-size: clamp(15px, 1.3vw, 18px); }
+        .hero-list-item { font-size: clamp(14px, 1.1vw, 16px); }
+        .hero-buttons { gap: clamp(10px, 1.2vw, 16px); }
+        .hero-image { width: 100%; height: clamp(320px, 60vh, 700px); }
+        .btn {
+            padding: clamp(12px, 1.2vw, 16px) clamp(20px, 2.4vw, 32px);
+            font-size: clamp(12px, 1vw, 14px);
+            white-space: nowrap;
+            display: inline-block;
+            text-align: center;
+        }
+
+        /* Trust badges */
+        .trust-section { padding: clamp(20px, 3vw, 33px) clamp(16px, 4vw, 64px); }
+        .trust-container { gap: clamp(16px, 4vw, 64px); }
+        .trust-badge p { font-size: clamp(10px, 0.9vw, 12px); }
+
+        /* Shop */
+        .shop-section { padding: clamp(40px, 6vw, 80px) clamp(16px, 4vw, 64px); }
+        .shop-header h2 { font-size: clamp(24px, 3.5vw, 32px); }
+        .products-grid {
+            grid-template-columns: repeat(auto-fill, minmax(min(100%, clamp(160px, 28vw, 260px)), 1fr));
+            gap: clamp(12px, 2vw, 24px);
+        }
+        .product-image { height: clamp(150px, 22vw, 200px); }
+        .product-info { padding: clamp(10px, 1.4vw, 16px); }
+        .product-name { font-size: clamp(14px, 1.3vw, 16px); }
+        .product-price { font-size: clamp(16px, 1.6vw, 18px); }
+        .product-description { font-size: clamp(12px, 1.1vw, 14px); }
+        .product-add-btn { padding: clamp(10px, 1vw, 12px); font-size: 14px; }
+
+        /* About & Contact pages (overrides inline sizing) */
+        #aboutSection, #contactSection {
+            padding: clamp(40px, 6vw, 80px) clamp(16px, 4vw, 64px) !important;
+        }
+        #aboutSection > div, #contactSection > div { max-width: 1000px; }
+        #aboutSection h1 { font-size: clamp(28px, 4.5vw, 48px) !important; }
+        #aboutSection h2, #contactSection h2 { font-size: clamp(22px, 3vw, 32px) !important; }
+        #aboutSection p, #contactSection p { font-size: clamp(14px, 1.1vw, 16px) !important; }
+        #aboutSection [style*="padding: 48px"] { padding: clamp(20px, 4vw, 48px) !important; }
+        #aboutSection [style*="padding: 40px"],
+        #contactSection [style*="padding: 40px"] { padding: clamp(20px, 3.5vw, 40px) !important; }
+        #aboutSection [style*="minmax(250px"] { grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)) !important; }
+        #aboutSection [style*="minmax(200px"] { grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)) !important; }
+
+        /* Cart & checkout modals */
+        .cart-modal, .checkout-modal { padding: 12px; }
+        .cart-content, .checkout-content {
+            width: 100%;
+            max-width: 600px;
+            padding: clamp(20px, 4vw, 40px);
+        }
+        .cart-item { flex-wrap: wrap; gap: 10px; }
+        .cart-item-qty { flex-wrap: wrap; }
+        .cart-actions { flex-wrap: wrap; }
+        .cart-actions button { min-width: 140px; }
+
+        /* Admin panel */
+        .admin-panel { padding-top: 0; }
+        .admin-container { padding: clamp(20px, 4vw, 40px) clamp(16px, 4vw, 64px); }
+        .admin-header { flex-wrap: wrap; gap: 12px; }
+        .admin-header h2 { font-size: clamp(22px, 3vw, 32px); }
+        .add-product-form { padding: clamp(16px, 3vw, 32px); }
+        .form-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
+        .form-group input, .form-group textarea { font-size: 16px; } /* prevents iOS zoom */
+        .products-list { grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); }
+
+        /* Footer */
+        footer { padding: clamp(48px, 8vw, 120px) clamp(16px, 4vw, 64px); }
+        .footer-container {
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr));
+            gap: clamp(24px, 4vw, 40px);
+        }
+        .footer-section h4 { font-size: clamp(18px, 2.2vw, 24px); }
+
+        /* Large screens (TV, 2K, 4K) */
+        @media (min-width: 1800px) {
+            body { font-size: 18px; }
+            nav, .hero, .trust-container, .footer-container { max-width: 1600px; margin-left: auto; margin-right: auto; }
+            .products-grid { max-width: 1600px; }
+        }
+
+        /* Tablets */
+        @media (max-width: 1024px) {
+            .hero { grid-template-columns: 1fr; }
+            .hero-content { max-width: 720px; }
+            .hero-image { height: clamp(260px, 50vh, 500px); }
+            .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .stats-grid > :last-child:nth-child(odd) { grid-column: 1 / -1; }
+            .footer-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+
+        /* Phones (portrait) and small tablets */
+        @media (max-width: 768px) {
+            header { padding: 12px 16px; }
+            nav { flex-direction: column; align-items: center; gap: 10px; }
+            .nav-center { order: -1; width: 100%; }
+            .nav-left, .nav-right { width: 100%; flex: none; justify-content: center; }
+            .hero { padding: 40px 16px; }
+            .hero-buttons { flex-direction: column; width: 100%; }
+            .hero-buttons .btn { width: 100%; }
+            .hero-image { height: clamp(240px, 45vh, 380px); }
+            .trust-container { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; justify-items: center; }
+            .trust-badge { flex: none; }
+            .stats-grid { grid-template-columns: 1fr; }
+            .stats-grid > :last-child:nth-child(odd) { grid-column: auto; }
+            .cart-actions { flex-direction: column; }
+            .cart-actions button { width: 100%; }
+            .admin-header { flex-direction: column; align-items: flex-start; }
+            .admin-container { padding: 20px 16px; }
+        }
+
+        /* Small phones */
+        @media (max-width: 480px) {
+            .nav-left, .nav-right { gap: 16px; }
+            .nav-left a, .nav-right a { font-size: 11px; }
+            .nav-center { font-size: 18px; }
+            .trust-container { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+            .footer-container { grid-template-columns: 1fr; text-align: center; }
+            .footer-list a { font-size: 15px; }
+        }
+
+        /* Very small phones (~320px) */
+        @media (max-width: 380px) {
+            .products-grid { grid-template-columns: 1fr; }
+            .nav-left a, .nav-right a { letter-spacing: 0.3px; }
+            .hero-content h1 { font-size: 30px; }
+        }
+
+        /* Landscape phones / short screens */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .hero { padding: 24px 32px; }
+            .hero-image { height: 240px; }
+            header { padding: 8px 24px; }
+        }
+
+        /* Respect reduced-motion preference */
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after { transition: none !important; animation: none !important; }
+        }
+        /* ===== LOGIN GATE ===== */
+        .login-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 9000;
+            background: rgba(45, 33, 22, 0.65);
+            backdrop-filter: blur(4px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+        .login-overlay.hidden { display: none; }
+        .login-card {
+            width: 100%;
+            max-width: 420px;
+            background: #f5f0e8;
+            border: 1px solid #d4a574;
+            border-radius: 14px;
+            padding: clamp(24px, 4vw, 40px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+        }
+        .login-card h2 {
+            font-family: 'Bodoni Moda', serif;
+            font-weight: 400;
+            font-size: clamp(22px, 3vw, 28px);
+            color: #060607;
+            margin-bottom: 8px;
+        }
+        .login-card .sub { font-size: 14px; color: #666; margin-bottom: 20px; }
+        .pw-rules { list-style: none; font-size: 13px; color: #888; margin: 4px 0 16px; }
+        .pw-rules li { padding: 2px 0; }
+        .pw-rules li::before { content: '○ '; }
+        .pw-rules li.ok { color: #2e7d32; }
+        .pw-rules li.ok::before { content: '● '; }
+        .login-error { color: #c62828; font-size: 14px; min-height: 20px; margin-bottom: 12px; }
+        .user-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #060607;
+            color: #fff;
+            padding: 8px 14px;
+            border-radius: 999px;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+        .user-pill button {
+            background: none;
+            border: none;
+            color: #d4a574;
+            cursor: pointer;
+            font-size: 12px;
+            text-decoration: underline;
+            padding: 0;
+        }
+        #heroImg { transition: opacity 0.6s ease; }
+        .link-btn {
+            display: block;
+            margin: 14px auto 0;
+            background: none;
+            border: none;
+            color: #8a5a2b;
+            text-decoration: underline;
+            cursor: pointer;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ========== HEADER ========== -->
+    <header>
+        <nav>
+            <div class="nav-left">
+                <a onclick="showSection('home')">Home</a>
+                <a onclick="showSection('shop')">Shop</a>
+            </div>
+            <a href="https://www.dreamlinefashions.in/" target="_blank" class="nav-center">Dreamline Cotton</a>
+            <div class="nav-right">
+                <a onclick="showSection('contact')">Contact</a>
+                <div id="authArea"></div>
+                <div class="nav-icons">
+                    <button class="icon-btn" onclick="toggleCart()">
+                        🛒
+                        <span class="cart-count" id="cartCount" style="display: none;">0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========== LOGIN (required before using the website) ========== -->
+    <div class="login-overlay" id="loginOverlay">
+        <div class="login-card">
+            <h2>Welcome to Dreamline Cotton</h2>
+            <p class="sub">Enter your email ID. New here? Create your password now. Returning? Use the password you created.</p>
+            <form id="loginForm" novalidate>
+                <div class="form-group">
+                    <label for="loginEmail">Email ID</label>
+                    <input type="email" id="loginEmail" required placeholder="you@example.com" autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required placeholder="Create or enter password" autocomplete="current-password">
+                </div>
+                <ul class="pw-rules">
+                    <li id="ruleLen">At least 8 characters</li>
+                    <li id="ruleLetters">At least 5 letters</li>
+                    <li id="ruleNums">At least 2 numbers</li>
+                    <li id="ruleSpecial">At least 1 special character (e.g. @ # $ ! %)</li>
+                </ul>
+                <div class="login-error" id="loginError"></div>
+                <button type="submit" class="btn" id="loginBtn" style="width: 100%;">Login / Create Account</button>
+                <button type="button" class="link-btn" onclick="showResetStep1()">🔑 Forgot password? Reset it</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========== RESET PASSWORD (OTP) ========== -->
+    <div class="login-overlay hidden" id="resetOverlay">
+        <div class="login-card">
+            <h2>🔑 Reset password</h2>
+            <p class="sub" id="resetSub">Step 1 of 2: enter the email ID you registered with. We will send an OTP to it.</p>
+            <form id="resetEmailForm" novalidate>
+                <div class="form-group">
+                    <label for="resetEmail">Email ID</label>
+                    <input type="email" id="resetEmail" required placeholder="you@example.com">
+                </div>
+                <button type="submit" class="btn" id="sendOtpBtn" style="width: 100%;">Send OTP</button>
+            </form>
+            <form id="resetPassForm" novalidate style="display: none;">
+                <div class="form-group">
+                    <label for="resetOtp">6-digit OTP</label>
+                    <input type="text" id="resetOtp" inputmode="numeric" maxlength="6" required placeholder="123456">
+                </div>
+                <div class="form-group">
+                    <label for="resetNewPassword">New password</label>
+                    <input type="password" id="resetNewPassword" required placeholder="New password">
+                </div>
+                <div class="form-group">
+                    <label for="resetConfirm">Confirm new password</label>
+                    <input type="password" id="resetConfirm" required placeholder="Re-enter new password">
+                </div>
+                <p class="sub" style="font-size: 12px;">Rules: 8+ characters, 5 letters, 2 numbers, 1 special character.</p>
+                <button type="submit" class="btn" id="resetBtn" style="width: 100%;">Change password</button>
+            </form>
+            <div class="login-error" id="resetError"></div>
+            <button type="button" class="link-btn" onclick="showLoginCard()">← Back to login</button>
+        </div>
+    </div>
+
+    <!-- ========== HOME SECTION ========== -->
+    <div id="homeSection">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Pure Cotton.<br>Crafted by Us.<br>Worn by You.</h1>
+                <p>From sourcing the finest cotton to stitching, finishing, quality inspection, and packaging, every garment is created in our own manufacturing facility.</p>
+
+                <div class="hero-list">
+                    <div class="hero-list-item">100% Cotton</div>
+                    <div class="hero-list-item">Manufactured In-House</div>
+                    <div class="hero-list-item">Export Quality Standards</div>
+                    <div class="hero-list-item">Quality Checked Before Shipping</div>
+                </div>
+
+                <div class="hero-buttons">
+                    <button class="btn" onclick="showSection('shop')">Shop Collection</button>
+                    <button class="btn btn-outline" onclick="showSection('about')">Learn More</button>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img id="heroImg" src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&h=700&fit=crop" alt="Cotton apparel">
+            </div>
+        </section>
+
+        <section class="trust-section">
+            <div class="trust-container">
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">✓</div>
+                    <p>Export Quality</p>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">🇮🇳</div>
+                    <p>Made in India</p>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">🧵</div>
+                    <p>100% Cotton</p>
+                </div>
+                <div class="trust-badge">
+                    <div class="trust-badge-icon">🔒</div>
+                    <p>Secure Checkout</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ========== SHOP SECTION ========== -->
+    <section class="shop-section" id="shopSection">
+        <div class="shop-header">
+            <h2>Our Collection</h2>
+            <p>Premium cotton garments crafted to perfection</p>
+        </div>
+        <div class="products-grid" id="productsGrid">
+            <!-- Products loaded here -->
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="aboutSection" style="display: none; background: linear-gradient(90deg, #e8dcc8 0%, #f5f0e8 100%); padding: 80px 64px;">
+        <div style="max-width: 1000px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 48px;">
+                <h1 style="font-family: 'Bodoni Moda', serif; font-size: 48px; font-weight: 400; color: #060607; margin-bottom: 16px;">About Dreamline Cotton</h1>
+                <p style="font-size: 18px; color: #444748; line-height: 1.8;">From humble beginnings to global excellence</p>
+            </div>
+
+            <div style="background: white; padding: 48px; border-radius: 12px; border: 1px solid #d0c8c0; margin-bottom: 40px;">
+                <!-- Our Journey -->
+                <div style="margin-bottom: 40px;">
+                    <h2 style="font-family: 'Bodoni Moda', serif; font-size: 32px; font-weight: 400; color: #060607; margin-bottom: 16px;">🌱 Our Journey</h2>
+                    <p style="font-size: 16px; color: #444748; line-height: 1.8; margin-bottom: 12px;">
+                        Dreamline Cotton began its remarkable journey over <strong>10 years ago</strong>, starting from raw materials and bottoms. What began as a vision to create quality cotton products has evolved into a trusted name in the textile industry.
+                    </p>
+                </div>
+
+                <!-- Quality & Expertise -->
+                <div style="margin-bottom: 40px;">
+                    <h2 style="font-family: 'Bodoni Moda', serif; font-size: 32px; font-weight: 400; color: #060607; margin-bottom: 16px;">✓ Quality & Expertise</h2>
+                    <p style="font-size: 16px; color: #444748; line-height: 1.8; margin-bottom: 12px;">
+                        With a decade of experience in manufacturing, we have mastered the art of creating premium quality cotton products with exceptional quantity output and timely delivery. Every garment is crafted with precision and care to ensure customer satisfaction.
+                    </p>
+                </div>
+
+                <!-- Our Infrastructure -->
+                <div style="margin-bottom: 40px;">
+                    <h2 style="font-family: 'Bodoni Moda', serif; font-size: 32px; font-weight: 400; color: #060607; margin-bottom: 16px;">🏭 Our Infrastructure</h2>
+                    <p style="font-size: 16px; color: #444748; line-height: 1.8; margin-bottom: 12px;">
+                        We proudly operate our <strong>own manufacturing unit and factory in Tiruppur</strong>, the textile capital of India. Additionally, we have strategic partnerships with <strong>more than 10 factories in Tiruppur</strong>, giving us the capacity and flexibility to meet any production requirement.
+                    </p>
+                </div>
+
+                <!-- Global Reach -->
+                <div style="margin-bottom: 40px;">
+                    <h2 style="font-family: 'Bodoni Moda', serif; font-size: 32px; font-weight: 400; color: #060607; margin-bottom: 16px;">🌍 Global Export Excellence</h2>
+                    <p style="font-size: 16px; color: #444748; line-height: 1.8; margin-bottom: 12px;">
+                        With <strong>8-10 years of export experience</strong>, we have successfully shipped our products to customers across the globe. We can take bulk orders and provide export services to any country worldwide, maintaining the highest quality standards throughout.
+                    </p>
+                </div>
+
+                <!-- Online Sales -->
+                <div>
+                    <h2 style="font-family: 'Bodoni Moda', serif; font-size: 32px; font-weight: 400; color: #060607; margin-bottom: 16px;">🛍️ Direct-to-Customer Sales</h2>
+                    <p style="font-size: 16px; color: #444748; line-height: 1.8;">
+                        Recently, we have expanded into direct online sales, bringing our premium cotton products directly to customers at competitive and affordable prices. By eliminating middlemen, we can offer the best quality at unbeatable costs.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Why Choose Us -->
+            <div style="background: #f5f0e8; padding: 40px; border-radius: 12px; margin-bottom: 40px;">
+                <h2 style="font-family: 'Bodoni Moda', serif; font-size: 32px; font-weight: 400; color: #060607; margin-bottom: 24px; text-align: center;">Why Choose Dreamline Cotton?</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 12px;">✓</div>
+                        <h3 style="font-size: 16px; font-weight: 600; color: #060607; margin-bottom: 8px;">10+ Years Experience</h3>
+                        <p style="font-size: 14px; color: #666;">Decade of expertise in cotton manufacturing</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 12px;">🏭</div>
+                        <h3 style="font-size: 16px; font-weight: 600; color: #060607; margin-bottom: 8px;">Own Manufacturing</h3>
+                        <p style="font-size: 14px; color: #666;">Complete control over quality and production</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 12px;">🌍</div>
+                        <h3 style="font-size: 16px; font-weight: 600; color: #060607; margin-bottom: 8px;">Global Export</h3>
+                        <p style="font-size: 14px; color: #666;">Shipping to customers worldwide</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 12px;">💰</div>
+                        <h3 style="font-size: 16px; font-weight: 600; color: #060607; margin-bottom: 8px;">Best Prices</h3>
+                        <p style="font-size: 14px; color: #666;">Premium quality at affordable costs</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 12px;">📦</div>
+                        <h3 style="font-size: 16px; font-weight: 600; color: #060607; margin-bottom: 8px;">Bulk Orders</h3>
+                        <p style="font-size: 14px; color: #666;">Flexible quantities for all needs</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 12px;">🧵</div>
+                        <h3 style="font-size: 16px; font-weight: 600; color: #060607; margin-bottom: 8px;">100% Cotton</h3>
+                        <p style="font-size: 14px; color: #666;">Pure cotton, premium quality</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div style="background: #d4a574; padding: 40px; border-radius: 12px; color: white; text-align: center;">
+                <h2 style="font-family: 'Bodoni Moda', serif; font-size: 28px; font-weight: 400; margin-bottom: 24px;">Get In Touch With Us</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px;">
+                    <div>
+                        <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 8px;">📞 Phone</h3>
+                        <a href="tel:+917339519346" style="color: white; text-decoration: none; font-size: 14px;">+91 733 951 9346</a>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 8px;">📧 Email</h3>
+                        <a href="mailto:divyadharshan3115@gmail.com" style="color: white; text-decoration: none; font-size: 14px;">divyadharshan3115@gmail.com</a>
+                    </div>
+                    <div>
+                        <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 8px;">💼 LinkedIn</h3>
+                        <a href="https://www.linkedin.com/in/divyadharshan-velusamy-44685333b" target="_blank" style="color: white; text-decoration: none; font-size: 14px;">Divyadharshan Velusamy</a>
+                    </div>
+                </div>
+                <div style="margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.3);">
+                    <p style="font-size: 14px; margin: 4px 0;">Dreamline Cotton</p>
+                    <p style="font-size: 14px; margin: 4px 0;">Tiruppur, Tamil Nadu, India</p>
+                    <p style="font-size: 14px; margin: 4px 0;">© 2024 All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contactSection" style="display: none; background: #e8dcc8; padding: 80px 64px; margin-top: 0;">
+        <div style="max-width: 600px; margin: 0 auto;">
+            <div style="text-align: center; margin-bottom: 48px;">
+                <h2 style="font-family: 'Bodoni Moda', serif; font-size: 32px; font-weight: 400; color: #060607; margin-bottom: 16px;">Get In Touch</h2>
+                <p style="font-size: 16px; color: #444748;">We'd love to hear from you. Reach out to us through any of these channels.</p>
+            </div>
+
+            <div style="background: white; padding: 40px; border-radius: 12px; border: 1px solid #e0d5cf;">
+                <!-- Phone -->
+                <div style="margin-bottom: 32px; text-align: center;">
+                    <div style="font-size: 28px; margin-bottom: 12px;">☎️</div>
+                    <h3 style="font-size: 18px; font-weight: 600; color: #060607; margin-bottom: 8px;">Phone</h3>
+                    <a href="tel:+917339519346" style="font-size: 16px; color: #d4a574; text-decoration: none; font-weight: 600;">+91 733 951 9346</a>
+                </div>
+
+                <!-- Email -->
+                <div style="margin-bottom: 32px; text-align: center;">
+                    <div style="font-size: 28px; margin-bottom: 12px;">✉️</div>
+                    <h3 style="font-size: 18px; font-weight: 600; color: #060607; margin-bottom: 8px;">Email</h3>
+                    <a href="mailto:divyadharshan3115@gmail.com" style="font-size: 16px; color: #d4a574; text-decoration: none; font-weight: 600;">divyadharshan3115@gmail.com</a>
+                </div>
+
+                <!-- LinkedIn -->
+                <div style="margin-bottom: 32px; text-align: center;">
+                    <div style="font-size: 28px; margin-bottom: 12px;">💼</div>
+                    <h3 style="font-size: 18px; font-weight: 600; color: #060607; margin-bottom: 8px;">LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/divyadharshan-velusamy-44685333b" target="_blank" style="font-size: 16px; color: #d4a574; text-decoration: none; font-weight: 600;">Divyadharshan Velusamy</a>
+                </div>
+
+                <!-- Instagram -->
+                <div style="text-align: center;">
+                    <div style="font-size: 28px; margin-bottom: 12px;">📸</div>
+                    <h3 style="font-size: 18px; font-weight: 600; color: #060607; margin-bottom: 8px;">Instagram</h3>
+                    <a href="https://www.instagram.com/_dharshan._.velusamy_?stkn=a3V1Z201ZGZmeDFh&utm_source=qr" target="_blank" style="font-size: 16px; color: #d4a574; text-decoration: none; font-weight: 600;">@_dharshan._.velusamy_</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CART MODAL ========== -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <button class="cart-close" onclick="toggleCart()">×</button>
+            </div>
+            <div class="cart-items" id="cartItems"></div>
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="cart-total-price" id="cartTotal">₹0</span>
+                </div>
+            </div>
+            <div class="cart-actions">
+                <button class="continue-shopping-btn" onclick="toggleCart()">Continue Shopping</button>
+                <button class="checkout-btn" onclick="openCheckout()">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== CHECKOUT MODAL ========== -->
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-content">
+            <div class="checkout-header">
+                <h2>Checkout</h2>
+                <button class="cart-close" onclick="closeCheckout()">×</button>
+            </div>
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <label for="checkoutName">Full Name</label>
+                    <input type="text" id="checkoutName" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkoutEmail">Email</label>
+                    <input type="email" id="checkoutEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkoutPhone">Phone</label>
+                    <input type="tel" id="checkoutPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="checkoutAddress">Address</label>
+                    <textarea id="checkoutAddress" required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Place Order</button>
+                <div id="checkoutMessage" class="form-message"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========== ADMIN PANEL ========== -->
+    <div class="admin-panel" id="adminPanel">
+        <div class="admin-container">
+            <div class="admin-header">
+                <h2>Product Management</h2>
+                <button class="btn btn-outline" onclick="closeAdminPanel()">Close</button>
+            </div>
+
+            <div class="add-product-form">
+                <h3 style="font-size: 18px; font-weight: 600; margin-bottom: 24px; color: #060607;">Add New Product</h3>
+                <form id="addProductForm">
+                    <div class="form-grid">
+                        <div class="form-group"><label for="productName">Name *</label><input type="text" id="productName" required></div>
+                        <div class="form-group"><label for="productPrice">Price *</label><input type="number" id="productPrice" required></div>
+                        <div class="form-group"><label for="productCategory">Category</label><input type="text" id="productCategory"></div>
+                        <div class="form-group"><label for="productImageURL">Image URL</label><input type="url" id="productImageURL"></div>
+                        <div class="form-group"><label for="productSizes">Sizes</label><input type="text" id="productSizes" placeholder="S, M, L, XL"></div>
+                        <div class="form-group"><label for="productColors">Colors</label><input type="text" id="productColors" placeholder="Red, Blue, White"></div>
+                        <div class="form-group"><label for="productStock">Stock</label><input type="number" id="productStock"></div>
+                        <div class="form-group"><label for="productSKU">SKU</label><input type="text" id="productSKU"></div>
+                        <div class="form-group"><label for="productMaterial">Material</label><input type="text" id="productMaterial" placeholder="100% Cotton"></div>
+                        <div class="form-group"><label for="productRating">Rating</label><input type="number" id="productRating" min="0" max="5" step="0.1"></div>
+                        <div class="form-group"><label for="productDiscount">Discount %</label><input type="number" id="productDiscount" min="0" max="100"></div>
+                        <div class="form-group form-grid full"><label for="productDescription">Description</label><textarea id="productDescription" style="width: 100%; height: 100px; padding: 12px; border: 1px solid #d0c8c0; border-radius: 4px;"></textarea></div>
+                    </div>
+                    <button type="submit" class="btn">Add Product</button>
+                    <div id="addProductMessage" class="form-message" style="margin-top: 16px;"></div>
+                </form>
+            </div>
+
+            <h3 style="font-size: 18px; font-weight: 600; margin: 40px 0 24px 0;">Products</h3>
+            <div class="products-list" id="adminProductsList"></div>
+        </div>
+    </div>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Dreamline Cotton</h4>
+                <p>© 2024 DREAMLINE COTTON. CRAFTED IN INDIA.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul class="footer-list">
+                    <li><a onclick="showSection('home')">About</a></li>
+                    <li><a onclick="showSection('shop')">Shop</a></li>
+                    <li><a onclick="showSection('contact')">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Social</h3>
+                <ul class="footer-list">
+                    <li><a href="https://www.instagram.com/_dharshan._.velusamy_?stkn=a3V1Z201ZGZmeDFh&utm_source=qr" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/divyadharshan-velusamy-44685333b" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="footer-list">
+                    <li><a href="tel:+917339519346">☎️ +91 733 951 9346</a></li>
+                    <li><a href="mailto:divyadharshan3115@gmail.com">✉️ Email</a></li>
+                    <li><a href="https://www.linkedin.com/in/divyadharshan-velusamy-44685333b" target="_blank">💼 LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyca2ydQULjB9-4ZY5B5_sfwiRs5f--zFkIPvNX2DzXIq00U3RBBeyBtCXitJQizGroIg/exec';
+        let cart = [];
+        let products = [];
+
+        function showSection(section) {
+            document.getElementById('homeSection').style.display = section === 'home' ? 'block' : 'none';
+            document.getElementById('shopSection').classList.toggle('active', section === 'shop');
+            document.getElementById('aboutSection').style.display = section === 'about' ? 'block' : 'none';
+            document.getElementById('contactSection').style.display = section === 'contact' ? 'block' : 'none';
+        }
+
+        async function loadProducts() {
+            try {
+                const response = await fetch(SCRIPT_URL + '?' + new URLSearchParams({ action: 'getCollections' }), { method: 'GET', mode: 'cors' }).catch(() => null);
+                if (response && response.ok) {
+                    const data = await response.json();
+                    if (data.success) products = data.data;
+                }
+            } catch (e) {}
+            
+            if (products.length === 0) {
+                products = [
+                    { id: 'COL-1', name: 'Classic White T-Shirt', price: 499, description: 'Premium 100% cotton', imageURL: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=300&h=300&fit=crop', category: 'T-Shirts', sizes: 'S, M, L, XL', colors: 'White', stock: 50 },
+                    { id: 'COL-2', name: 'Blue Casual Shirt', price: 799, description: 'Comfortable cotton shirt', imageURL: 'https://images.unsplash.com/photo-1596362051847-6c4dc5c84a0b?w=300&h=300&fit=crop', category: 'Shirts', sizes: 'S, M, L', colors: 'Blue', stock: 30 }
+                ];
+            }
+            displayProducts();
+            displayAdminProducts();
+        }
+
+        function displayProducts() {
+            const grid = document.getElementById('productsGrid');
+            grid.innerHTML = products.length === 0 ? '<div class="empty-message">No products</div>' : products.map(p => `
+                <div class="product-card">
+                    <div class="product-image"><img src="${p.imageURL || 'https://via.placeholder.com/300x200'}" alt="${p.name}" onerror="this.src='https://via.placeholder.com/300x200'"></div>
+                    <div class="product-info">
+                        <div class="product-category">${p.category || 'Uncategorized'}</div>
+                        <div class="product-name">${p.name}</div>
+                        <div class="product-price">₹${p.price}</div>
+                        <div class="product-description">${p.description || 'Premium quality'}</div>
+                        <button class="product-add-btn" onclick="addToCartById('${p.id}')">Add to Cart</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function displayAdminProducts() {
+            const list = document.getElementById('adminProductsList');
+            list.innerHTML = products.length === 0 ? '<div class="empty-message">No products</div>' : products.map(p => `
+                <div class="admin-product-card">
+                    <div class="admin-product-image"><img src="${p.imageURL || 'https://via.placeholder.com/300x200'}" alt="${p.name}" onerror="this.src='https://via.placeholder.com/300x200'"></div>
+                    <div class="admin-product-info"><strong>${p.name}</strong></div>
+                    <div class="admin-product-info">₹${p.price} | Stock: ${p.stock || 0}</div>
+                    <div class="admin-product-actions">
+                        <button class="edit-btn" onclick="editProduct('${p.id}')">Edit</button>
+                        <button class="delete-btn" onclick="deleteProduct('${p.id}')">Delete</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function showAdminPanel() { document.getElementById('adminPanel').classList.add('active'); document.body.style.overflow = 'hidden'; }
+        function closeAdminPanel() { document.getElementById('adminPanel').classList.remove('active'); document.body.style.overflow = 'auto'; }
+
+        document.getElementById('addProductForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = document.getElementById('productName').value, price = document.getElementById('productPrice').value;
+            if (!name || !price) { showMsg('addProductMessage', 'Name and Price required', 'error'); return; }
+            
+            const url = SCRIPT_URL + '?' + new URLSearchParams({
+                action: 'addCollection', name, price,
+                description: document.getElementById('productDescription').value,
+                imageURL: document.getElementById('productImageURL').value,
+                category: document.getElementById('productCategory').value,
+                sizes: document.getElementById('productSizes').value,
+                colors: document.getElementById('productColors').value,
+                stock: document.getElementById('productStock').value,
+                sku: document.getElementById('productSKU').value,
+                material: document.getElementById('productMaterial').value,
+                rating: document.getElementById('productRating').value,
+                discount: document.getElementById('productDiscount').value
+            });
+
+            await fetch(url, { method: 'GET', mode: 'no-cors' }).then(() => {
+                products.push({ id: 'COL-' + Date.now(), name, price, description: document.getElementById('productDescription').value, imageURL: document.getElementById('productImageURL').value, category: document.getElementById('productCategory').value, sizes: document.getElementById('productSizes').value, colors: document.getElementById('productColors').value, stock: document.getElementById('productStock').value, sku: document.getElementById('productSKU').value, material: document.getElementById('productMaterial').value, rating: document.getElementById('productRating').value, discount: document.getElementById('productDiscount').value });
+                displayProducts();
+                displayAdminProducts();
+                document.getElementById('addProductForm').reset();
+                showMsg('addProductMessage', 'Product added!', 'success');
+            }).catch(() => showMsg('addProductMessage', 'Error', 'error'));
+        });
+
+        function deleteProduct(id) {
+            if (!confirm('Delete this product?')) return;
+            fetch(SCRIPT_URL + '?' + new URLSearchParams({ action: 'deleteCollection', id }), { method: 'GET', mode: 'no-cors' }).then(() => {
+                products = products.filter(p => p.id !== id);
+                displayProducts();
+                displayAdminProducts();
+            }).catch(() => alert('Error'));
+        }
+
+        // Looks the product up by ID, so names with quotes or apostrophes cannot break the button
+        function addToCartById(id) {
+            const product = products.find(p => String(p.id) === String(id));
+            if (!product) {
+                alert('Sorry, this product is not available right now.');
+                return;
+            }
+            const price = Number(product.price) || 0;
+            const existing = cart.find(i => String(i.id) === String(id));
+            if (existing) existing.qty += 1;
+            else cart.push({ id: String(id), name: product.name, price: price, qty: 1 });
+            updateCartUI();
+            document.getElementById('cartModal').classList.add('active');
+        }
+
+        function updateCartUI() {
+            const count = cart.reduce((s, i) => s + i.qty, 0);
+            document.getElementById('cartCount').textContent = count;
+            document.getElementById('cartCount').style.display = count > 0 ? 'flex' : 'none';
+
+            let total = 0;
+            document.getElementById('cartItems').innerHTML = cart.length === 0 ? '<div class="empty-message">Cart empty</div>' : cart.map(item => {
+                const t = item.price * item.qty;
+                total += t;
+                return `<div class="cart-item"><div class="cart-item-info"><div class="cart-item-name">${item.name}</div><div class="cart-item-price">₹${item.price} x ${item.qty}</div></div><div class="cart-item-qty"><button class="qty-btn" onclick="updateQty('${item.id}', -1)">-</button><span>${item.qty}</span><button class="qty-btn" onclick="updateQty('${item.id}', 1)">+</button><button class="remove-btn" onclick="removeFromCart('${item.id}')">Remove</button></div></div>`;
+            }).join('');
+            document.getElementById('cartTotal').textContent = '₹' + total;
+            persistCart();
+        }
+
+        function updateQty(id, change) {
+            const item = cart.find(i => i.id === id);
+            if (item) { item.qty += change; if (item.qty <= 0) removeFromCart(id); else updateCartUI(); }
+        }
+
+        function removeFromCart(id) { cart = cart.filter(i => i.id !== id); updateCartUI(); }
+        function toggleCart() { document.getElementById('cartModal').classList.toggle('active'); }
+        function openCheckout() { if (cart.length === 0) alert('Cart empty'); else { toggleCart(); document.getElementById('checkoutModal').classList.add('active'); } }
+        function closeCheckout() { document.getElementById('checkoutModal').classList.remove('active'); }
+
+        document.getElementById('checkoutForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const name = document.getElementById('checkoutName').value, email = document.getElementById('checkoutEmail').value, phone = document.getElementById('checkoutPhone').value;
+            if (!name || !email || !phone) { showMsg('checkoutMessage', 'All fields required', 'error'); return; }
+
+            const total = cart.reduce((s, i) => s + (i.price * i.qty), 0);
+            const url = SCRIPT_URL + '?' + new URLSearchParams({ action: 'submitOrder', customerName: name, customerEmail: email, customerPhone: phone, items: JSON.stringify(cart), totalAmount: total });
+
+            await fetch(url, { method: 'GET', mode: 'no-cors' }).then(() => {
+                showMsg('checkoutMessage', 'Order placed!', 'success');
+                cart = [];
+                updateCartUI();
+                setTimeout(() => { closeCheckout(); showSection('home'); }, 2000);
+            }).catch(() => showMsg('checkoutMessage', 'Error', 'error'));
+        });
+
+        function showMsg(id, msg, type) { const el = document.getElementById(id); el.className = 'form-message ' + type; el.textContent = (type === 'success' ? '✓ ' : '✗ ') + msg; setTimeout(() => el.style.display = 'none', 4000); }
+
+        // ========== LOGIN ==========
+const AUTH_KEY = 'dreamline_user';
+
+// Hero photos (rotate every 3 seconds). Replace PASTE_... with your own photo links.
+const HERO_IMAGES = [
+    'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&h=700&fit=crop',
+    'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=700&fit=crop',
+    'https://images.unsplash.com/photo-1596362051847-6c4dc5c84a0b?w=600&h=700&fit=crop',
+    'PASTE_PHOTO_4_URL_HERE',
+    'PASTE_PHOTO_5_URL_HERE'
+].filter(url => !url.startsWith('PASTE_'));
+
+let heroIndex = 0;
+function startHeroSlideshow() {
+    const img = document.getElementById('heroImg');
+    if (!img || HERO_IMAGES.length < 2) return;
+    setInterval(() => {
+        heroIndex = (heroIndex + 1) % HERO_IMAGES.length;
+        img.style.opacity = 0;
+        setTimeout(() => {
+            img.src = HERO_IMAGES[heroIndex];
+            img.style.opacity = 1;
+        }, 600);
+    }, 3000);
+}
+
+function passwordChecks(p) {
+    return {
+        len: p.length >= 8 && !/\s/.test(p),
+        letters: (p.match(/[A-Za-z]/g) || []).length >= 5,
+        nums: (p.match(/[0-9]/g) || []).length >= 2,
+        special: (p.match(/[^A-Za-z0-9\s]/g) || []).length >= 1
+    };
+}
+
+function updatePasswordRules() {
+    const c = passwordChecks(document.getElementById('loginPassword').value);
+    document.getElementById('ruleLen').className = c.len ? 'ok' : '';
+    document.getElementById('ruleLetters').className = c.letters ? 'ok' : '';
+    document.getElementById('ruleNums').className = c.nums ? 'ok' : '';
+    document.getElementById('ruleSpecial').className = c.special ? 'ok' : '';
+}
+
+// "Hello, Divyadharshan" - first word of the part before @
+function firstWordFromEmail(email) {
+    const local = email.split('@')[0] || '';
+    const word = local.split(/[^A-Za-z]+/).filter(Boolean)[0] || local;
+    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+}
+
+function renderAuthArea(email) {
+    const area = document.getElementById('authArea');
+    area.innerHTML = email
+        ? '<div class="user-pill">Hello, ' + firstWordFromEmail(email) + ' <button onclick="logout()">Logout</button></div>'
+        : '';
+}
+
+function setLoggedIn(email) {
+    document.getElementById('loginOverlay').classList.add('hidden');
+    renderAuthArea(email);
+    const checkoutEmail = document.getElementById('checkoutEmail');
+    if (checkoutEmail) checkoutEmail.value = email;
+}
+
+function logout() {
+    clearSession();
+    cart = [];
+    cartLoaded = false;
+    updateCartUI();
+    renderAuthArea('');
+    document.getElementById('loginOverlay').classList.remove('hidden');
+}
+
+// JSONP request: works when index.html is opened directly from a file (file://)
+function jsonp(params) {
+    return new Promise((resolve, reject) => {
+        const cbName = 'dlCb' + Date.now() + Math.floor(Math.random() * 1000);
+        const qs = new URLSearchParams(Object.assign({}, params, { callback: cbName }));
+        const script = document.createElement('script');
+        const timer = setTimeout(() => { cleanup(); reject(new Error('timeout')); }, 20000);
+        function cleanup() {
+            clearTimeout(timer);
+            delete window[cbName];
+            script.remove();
+        }
+        window[cbName] = (data) => { cleanup(); resolve(data); };
+        script.onerror = () => { cleanup(); reject(new Error('network')); };
+        script.src = SCRIPT_URL + '?' + qs.toString();
+        document.body.appendChild(script);
+    });
+}
+
+document.getElementById('loginPassword').addEventListener('input', updatePasswordRules);
+
+document.getElementById('loginForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = document.getElementById('loginEmail').value.trim().toLowerCase();
+    const password = document.getElementById('loginPassword').value;
+    const errorEl = document.getElementById('loginError');
+    const btn = document.getElementById('loginBtn');
+    errorEl.textContent = '';
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        errorEl.textContent = 'Please enter a valid email ID';
+        return;
+    }
+    const c = passwordChecks(password);
+    if (!(c.len && c.letters && c.nums && c.special)) {
+        errorEl.textContent = 'Password does not meet the rules shown below';
+        return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Please wait...';
+    try {
+        const res = await jsonp({ action: 'login', email: email, password: password });
+        if (res.success) {
+            saveSession(email, res.token);
+            cart = Array.isArray(res.cart) ? res.cart : [];
+            cartLoaded = true;
+            updateCartUI();
+            document.getElementById('loginPassword').value = '';
+            setLoggedIn(email);
+        } else {
+            errorEl.textContent = res.message || 'Login failed. Please try again.';
+        }
+    } catch (err) {
+        errorEl.textContent = 'Could not reach the server. Check your internet connection and try again.';
+    } finally {
+        btn.disabled = false;
+        btn.textContent = 'Login / Create Account';
+    }
+});
+
+function initAuth() {
+    startHeroSlideshow();
+    let saved = null;
+    try { saved = sessionStorage.getItem(AUTH_KEY); } catch (e) {}
+    if (saved && getToken()) { setLoggedIn(saved); restoreCart(); }
+}
+
+// ========== SESSION, SAVED CART, FORGOT PASSWORD ==========
+let cartLoaded = false;
+let saveTimer = null;
+let resetEmailValue = '';
+
+function getToken() {
+    try { return sessionStorage.getItem('dreamline_token') || ''; } catch (e) { return ''; }
+}
+
+function saveSession(email, token) {
+    try {
+        sessionStorage.setItem(AUTH_KEY, email);
+        sessionStorage.setItem('dreamline_token', token || '');
+    } catch (e) {}
+}
+
+function clearSession() {
+    try {
+        sessionStorage.removeItem(AUTH_KEY);
+        sessionStorage.removeItem('dreamline_token');
+    } catch (e) {}
+}
+
+// Saves the cart to the "Carts" sheet shortly after every change
+function persistCart() {
+    const token = getToken();
+    if (!token || !cartLoaded) return;
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(() => {
+        jsonp({ action: 'saveCart', token: token, cart: JSON.stringify(cart) }).catch(() => {});
+    }, 400);
+}
+
+function restoreCart() {
+    jsonp({ action: 'getCart', token: getToken() }).then(res => {
+        if (res.success) {
+            cart = Array.isArray(res.cart) ? res.cart : [];
+            cartLoaded = true;
+            updateCartUI();
+        } else {
+            logout();
+        }
+    }).catch(() => { cartLoaded = false; });
+}
+
+function showResetStep1() {
+    document.getElementById('loginOverlay').classList.add('hidden');
+    document.getElementById('resetOverlay').classList.remove('hidden');
+    document.getElementById('resetEmailForm').style.display = 'block';
+    document.getElementById('resetPassForm').style.display = 'none';
+    document.getElementById('resetSub').textContent = 'Step 1 of 2: enter the email ID you registered with. We will send an OTP to it.';
+    document.getElementById('resetError').textContent = '';
+}
+
+function showLoginCard() {
+    document.getElementById('resetOverlay').classList.add('hidden');
+    document.getElementById('loginOverlay').classList.remove('hidden');
+}
+
+document.getElementById('resetEmailForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = document.getElementById('resetEmail').value.trim().toLowerCase();
+    const errorEl = document.getElementById('resetError');
+    const btn = document.getElementById('sendOtpBtn');
+    errorEl.textContent = '';
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        errorEl.textContent = 'Please enter a valid email ID';
+        return;
+    }
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    try {
+        const res = await jsonp({ action: 'sendOtp', email: email });
+        if (res.success) {
+            resetEmailValue = email;
+            document.getElementById('resetEmailForm').style.display = 'none';
+            document.getElementById('resetPassForm').style.display = 'block';
+            document.getElementById('resetSub').textContent = 'Step 2 of 2: enter the OTP sent to ' + email + ' and choose a new password.';
+            errorEl.textContent = '✓ ' + res.message;
+        } else {
+            errorEl.textContent = res.message || 'Could not send OTP';
+        }
+    } catch (err) {
+        errorEl.textContent = 'Could not reach the server. Please try again.';
+    } finally {
+        btn.disabled = false;
+        btn.textContent = 'Send OTP';
+    }
+});
+
+document.getElementById('resetPassForm').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const otp = document.getElementById('resetOtp').value.trim();
+    const newPassword = document.getElementById('resetNewPassword').value;
+    const confirm = document.getElementById('resetConfirm').value;
+    const errorEl = document.getElementById('resetError');
+    const btn = document.getElementById('resetBtn');
+    errorEl.textContent = '';
+
+    if (!/^\d{6}$/.test(otp)) {
+        errorEl.textContent = 'Enter the 6-digit OTP from your email';
+        return;
+    }
+    const c = passwordChecks(newPassword);
+    if (!(c.len && c.letters && c.nums && c.special)) {
+        errorEl.textContent = 'New password does not meet the rules';
+        return;
+    }
+    if (newPassword !== confirm) {
+        errorEl.textContent = 'Passwords do not match';
+        return;
+    }
+    btn.disabled = true;
+    btn.textContent = 'Changing...';
+    try {
+        const res = await jsonp({ action: 'resetPassword', email: resetEmailValue, otp: otp, newPassword: newPassword });
+        if (res.success) {
+            document.getElementById('resetPassForm').reset();
+            document.getElementById('loginEmail').value = resetEmailValue;
+            document.getElementById('loginPassword').value = '';
+            showLoginCard();
+            document.getElementById('loginError').textContent = '✓ Password changed. Please log in with your new password.';
+        } else {
+            errorEl.textContent = res.message || 'Could not change password';
+        }
+    } catch (err) {
+        errorEl.textContent = 'Could not reach the server. Please try again.';
+    } finally {
+        btn.disabled = false;
+        btn.textContent = 'Change password';
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => { initAuth(); loadProducts(); showSection('home'); });
+    </script>
+</body>
+</html>
